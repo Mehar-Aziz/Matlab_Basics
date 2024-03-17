@@ -1,9 +1,0 @@
-% Filter 1
-function Filters(filename)
-
-originalImage = imread(filename);
-myFilter1 = [1 1 1; 1 1 1; 1 1 1];
-Image = rgb2gray(originalImage);
-figure; imshow(Image);
-filteredImage = imfilter(double(Image),myFilter1);
-f
